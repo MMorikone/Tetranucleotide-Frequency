@@ -80,7 +80,7 @@ def window(seq, n=4):
     iterable s -> (s0, s1, ... s[n-1]), (s1, s2, ..., sn), ... """
     it = iter(seq)
     result = tuple(islice(it, n))
-## This does not make sense so commented out April 7 2015
+## This does not make sense so commented out April 7 2015.
 ##    if len(result) == n:
 ##        yield result    
     for elem in it:
